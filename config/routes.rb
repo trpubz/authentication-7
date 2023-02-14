@@ -4,7 +4,13 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "welcome#index"
+
   resources :users, only: [:new, :create]
+  
   get "/login", to: "users#login_form"
   post "/login", to: "users#login"
+
+  namespace :admin do
+    get "/dashboard", to: "dashboard#index"
+  end
 end
