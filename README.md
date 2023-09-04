@@ -1,24 +1,17 @@
-# README
+# Authentication Starter Repo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Versions
+Rails 7.0.x
+Ruby 3.2.2
 
-* Ruby version
+## Notes
+This repository is meant to be used in conjunction with lessons in week 3 of BE Mod 3, starting with the lesson on Authentication.
 
-* System dependencies
+It comes with gems `pry`, `rspec-rails`, `capybara`, `launchy`, and `shoulda-matchers` setup and ready to code along with lessons. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup
+```bash
+bundle install
+rails db:{create}
+```
